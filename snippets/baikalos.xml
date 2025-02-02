@@ -40,6 +40,7 @@
   <project path="frameworks/base" name="baikalos/android_frameworks_base" remote="baikalos" />
   <project path="frameworks/av" name="baikalos/android_frameworks_av" remote="baikalos" />
   <project path="frameworks/native" name="baikalos/android_frameworks_native" remote="baikalos" />
+  <project path="frameworks/opt/net/ims" name="baikalos/android_frameworks_opt_net_ims" remote="baikalos" />
 
   <project path="packages/apps/BaikalSettings" name="Baikalos/android_packages_apps_BaikalSettings" remote="baikalos" />
   <!-- AOSP packages -->
