@@ -44,6 +44,7 @@
   <remove-project name="LineageOS/android_packages_modules_adb" />
 
   <remove-project name="crdroidandroid/android_packages_modules_Wifi" />
+  <remove-project name="crdroidandroid/android_packages_apps_FaceUnlockService" />
 
   <!-- remove-project name="crdroidandroid/android_hardware_qcom_display" revision="13.0-caf-sm8150" / -->
   <remove-project name="platform/external/bouncycastle" />

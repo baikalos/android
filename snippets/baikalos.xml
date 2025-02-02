@@ -79,6 +79,7 @@
 
   <project path="external/bouncycastle" name="baikalos/android_external_bouncycastle" remote="baikalos" />
 
+  <project path="packages/apps/FaceUnlockService" name="baikalos/android_packages_apps_FaceUnlockService" remote="baikalos" />
   <!-- project path="hardware/qcom-caf/sm8150/display" name="Baikalos/hardware_qcom_display" remote="baikalos" revision="r-caf-sm8150" / -->
   <!-- project path="external/wpa_supplicant_8" name="baikalos/android_external_wpa_supplicant_8" groups="pdk" remote="baikalos" / -->
 
