@@ -44,6 +44,7 @@
   <remove-project name="crdroidandroid/android_hardware_lineage_interfaces" />
 
   <remove-project name="LineageOS/android_packages_modules_adb" />
+  <remove-project name="LineageOS/android_packages_providers_TelephonyProvider" />
 
   <!-- remove-project name="crdroidandroid/android_external_wpa_supplicant_8" / -->
 

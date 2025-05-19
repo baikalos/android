@@ -70,6 +70,8 @@
 
   <project path="packages/modules/adb" name="baikalos/android_packages_modules_adb" remote="baikalos" />
 
+  <project path="packages/providers/TelephonyProvider" name="baikalos/android_packages_providers_TelephonyProvider" remote="baikalos" />
+
   <!-- project path="external/wpa_supplicant_8" name="baikalos/android_external_wpa_supplicant_8" groups="pdk" remote="baikalos" / -->
 
 </manifest>
