@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remove-project name="platform/external/scudo" />
+  <!-- remove-project name="platform/external/scudo" / -->
   <remove-project name="platform/external/bouncycastle" />
   <remove-project name="platform/system/hardware/interfaces" />
 
