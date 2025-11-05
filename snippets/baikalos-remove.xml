@@ -55,5 +55,5 @@
   <remove-project name="LineageOS/android_packages_providers_CalendarProvider" />
   <remove-project name="LineageOS/android_packages_providers_MediaProvider" />
 
-
+  <remove-project name="LineageOS/android_packages_providers_TelephonyProvider" />
 </manifest>
