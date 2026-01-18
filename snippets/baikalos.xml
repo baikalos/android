@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="baikalos"
+	   fetch="https://github.com/"
+           review="gerrit.baikalos.com"
+           revision="refs/heads/16.0"
+           sync-j="8" />
+
+  <include name="snippets/baikalos-remove.xml" />
+
+  <project path="android" name="baikalos/android" remote="baikalos" />
+
+  <!-- project path="art" name="baikalos/android_art" groups="pdk" remote="baikalos" / -->
+
+  <project path="bionic" name="baikalos/android_bionic" groups="pdk" remote="baikalos" />
+
+  <project path="build/make" name="baikalos/android_build" groups="pdk" remote="baikalos" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="baikalos/android_build_soong" groups="pdk,tradefed" remote="baikalos" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- project path="vendor/dolby" name="baikalos/proprietary_vendor_dolby" remote="gitlab" revision="13.0" / -->
+
+  <project path="vendor/addons" name="baikalos/android_vendor_addons" remote="baikalos" />
+  <project path="vendor/BaikalOTA" name="baikalos/android_vendor_BaikalOTA" remote="baikalos" />
+  <project path="vendor/lineage" name="baikalos/android_vendor_baikalos" remote="baikalos" />
+
+  <project path="system/core" name="baikalos/android_system_core" groups="pdk" remote="baikalos" />
+  <project path="system/sepolicy" name="baikalos/android_system_sepolicy" groups="pdk" remote="baikalos" />
+
+  <project path="frameworks/base" name="baikalos/android_frameworks_base" remote="baikalos" />
+  <!-- project path="frameworks/av" name="baikalos/android_frameworks_av" remote="baikalos" / -->
+  <project path="frameworks/native" name="baikalos/android_frameworks_native" remote="baikalos" />
+  <project path="frameworks/opt/net/ims" name="baikalos/android_frameworks_opt_net_ims" remote="baikalos" />
+
+  <project path="packages/apps/BaikalSettings" name="Baikalos/android_packages_apps_BaikalSettings" remote="baikalos" />
+  <project path="packages/apps/crDroidSettings" name="Baikalos/android_packages_apps_crDroidSettings" remote="baikalos" />
+  <!-- AOSP packages -->
+  <project path="packages/apps/Launcher3" name="baikalos/android_packages_apps_Launcher3" remote="baikalos" />
+  <project path="packages/apps/Settings" name="baikalos/android_packages_apps_Settings" groups="pdk-fs" remote="baikalos" />
+  <project path="packages/apps/SetupWizard" name="baikalos/android_packages_apps_SetupWizard" remote="baikalos" />
+  <project path="packages/apps/Updater" name="baikalos/android_packages_apps_Updater" remote="baikalos" />
+  <project path="packages/modules/Bluetooth" name="baikalos/android_packages_modules_Bluetooth" remote="baikalos" />
+  <project path="packages/modules/Permission" name="baikalos/android_packages_modules_Permission" remote="baikalos" />
+  <project path="packages/modules/Wifi" name="baikalos/android_packages_modules_Wifi" remote="baikalos" />
+
+  <project path="packages/providers/CalendarProvider" name="baikalos/android_packages_providers_CalendarProvider" remote="baikalos" />
+  <project path="packages/providers/ContactsProvider" name="baikalos/android_packages_providers_ContactsProvider" remote="baikalos" />
+  <project path="packages/providers/MediaProvider" name="baikalos/android_packages_providers_MediaProvider" remote="baikalos" />
+
+
+  <!-- project path="vendor/qcom/opensource/fm-commonsys" name="baikalos/android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="baikalos" / -->
+
+  <!-- project path="hardware/qcom-caf/sm8150/display" name="baikalos/android_hardware_qcom_display" revision="13.0-caf-sm8150" / -->
+  <!-- project path="hardware/qcom-caf/sm8350/display" name="baikalos/android_hardware_qcom_display" groups="qcom,lahaina" revision="13.0-caf-sm8350" / -->
+  <!-- project path="hardware/qcom-caf/sdm845/display" name="baikalos/android_hardware_qcom_display" revision="lineage-20.0-caf-sdm845" / -->
+
+  <project path="hardware/google/pixel" name="baikalos/android_hardware_google_pixel" remote="baikalos" />
+  <project path="hardware/interfaces" name="baikalos/android_hardware_interfaces" groups="pdk" remote="baikalos" />
+
+  <project path="lineage-sdk" name="baikalos/android_lineage-sdk" remote="baikalos" />
+
+  <project path="hardware/lineage/interfaces" name="baikalos/android_hardware_lineage_interfaces" remote="baikalos" />
+
+  <!-- project path="system/hardware/interfaces" name="baikalos/platform_system_hardware_interfaces" remote="baikalos" / -->
+
+  <!-- project path="packages/modules/adb" name="baikalos/android_packages_modules_adb" remote="baikalos" / -->
+
+  <!-- project path="external/liblhdc" name="baikalos/android_external_liblhdc" remote="baikalos" / -->
+  <!-- project path="external/liblhdcv5" name="baikalos/android_external_liblhdcv5" remote="baikalos" / -->
+
+  <!-- project path="external/bouncycastle" name="baikalos/android_external_bouncycastle" remote="baikalos" / -->
+
+  <!-- project path="packages/apps/FaceUnlockService" name="baikalos/android_packages_apps_FaceUnlockService" remote="baikalos" / -->
+  <project path="packages/services/Telecomm" name="baikalos/android_packages_services_Telecomm" remote="baikalos" />
+
+  <project path="packages/providers/TelephonyProvider" name="baikalos/android_packages_providers_TelephonyProvider" remote="baikalos" />
+
+  <!-- project path="hardware/qcom-caf/sm8150/display" name="Baikalos/hardware_qcom_display" remote="baikalos" revision="r-caf-sm8150" / -->
+
+  <!-- project path="external/wpa_supplicant_8" name="baikalos/android_external_wpa_supplicant_8" groups="pdk" remote="baikalos" / -->
+
+  <project path="hardware/lineage/compat" name="baikalos/android_hardware_lineage_compat" remote="baikalos" />
+  <project path="packages/modules/Connectivity" name="baikalos/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="baikalos" />
+
+  <project path="packages/modules/StatsD" name="baikalos/android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="baikalos" />
+  <project path="packages/apps/LineageParts" name="baikalos/android_packages_apps_LineageParts" remote="baikalos" />
+
+  <project path="hardware/qcom-caf/sdm845/display" name="Legendleo90/android_hardware_qcom_display" revision="lineage-23.2-caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="Legendleo90/android_hardware_qcom_audio" revision="lineage-23.2-caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/media" name="Legendleo90/android_hardware_qcom_media" revision="lineage-23.1-caf-sm8150" remote="github" />
+
+  <project path="vendor/certification" name="baikalos/android_vendor_certification" remote="baikalos" />
+
+</manifest>
