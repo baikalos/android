@@ -101,4 +101,6 @@
 
   <project path="vendor/certification" name="baikalos/android_vendor_certification" remote="baikalos" />
 
+  <project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />
+
 </manifest>
