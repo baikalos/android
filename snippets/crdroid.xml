@@ -25,10 +25,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="crdroidandroid/android_build_soong" groups="pdk,tradefed,sysui-studio" remote="crdroid" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  <project path="build/soong" name="crdroidandroid/android_build_soong" groups="pdk,tradefed,sysui-studio" remote="crdroid" />
 
   <project path="art" name="crdroidandroid/android_art" groups="pdk" remote="crdroid" />
 
@@ -37,6 +34,9 @@
   <project path="bootable/recovery" name="crdroidandroid/android_bootable_recovery" groups="pdk" remote="crdroid" />
 
   <project path="device/lineage/sepolicy" name="crdroidandroid/android_device_crdroid_sepolicy" remote="crdroid" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="crdroidandroid/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="16.0-caf-sm8550" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="crdroidandroid/android_device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="16.0-caf-sm8650" />
+  <project path="device/qcom/sepolicy_vndr/sm8750" name="crdroidandroid/android_device_qcom_sepolicy_vndr" groups="qcom,pakala-vendor" revision="16.0-caf-sm8750" />
 
   <project path="external/arm-optimized-routines" name="crdroidandroid/android_external_arm-optimized-routines" groups="pdk" remote="crdroid" />
   <project path="external/bouncycastle" name="crdroidandroid/android_external_bouncycastle" groups="pdk" remote="crdroid" />
@@ -68,7 +68,6 @@
   <project path="packages/apps/crDroidSettings" name="crdroidandroid/android_packages_apps_crDroidSettings" remote="crdroid" />
   <project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="crdroid" />
   <project path="packages/apps/DocumentsUI" name="crdroidandroid/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
-  <project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />
   <project path="packages/apps/FaceUnlock" name="crdroidandroid/android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
   <project path="packages/apps/GameSpace" name="crdroidandroid/android_packages_apps_GameSpace" remote="crdroid" />
   <project path="packages/apps/Launcher3" name="crdroidandroid/android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="crdroid" />
